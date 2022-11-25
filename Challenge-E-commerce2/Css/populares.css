@@ -1,0 +1,86 @@
+body {
+    background-color: var(--bg-color);
+}
+
+.populares {
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: column;
+}
+
+.juegos {
+    display: flex;
+    justify-content: center;
+}
+
+.starwars {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 5px;
+}
+
+.populares__img {
+    width: 176px;
+    height: 174px;
+}
+
+.starwars-producto {
+    padding: 2px;
+
+}
+
+.producto {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+strong {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+}
+
+.ver-producto {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: var(--azul-destaque);
+}
+
+.consolas {
+    display: flex;
+    justify-content: center;
+}
+
+.consolas-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 5px;
+}
+
+.contenido {
+    padding: 2px;
+}
+
+.diversos {
+    display: flex;
+    justify-content: center;
+}
+
+.diversos-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 5px;
+}
+
+.contenido {
+    padding: 5px;
+}
+
+
+

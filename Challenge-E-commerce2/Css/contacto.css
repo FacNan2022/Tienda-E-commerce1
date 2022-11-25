@@ -1,0 +1,39 @@
+.formulario {
+    background-color: var(--bg-contacto);
+    display: flex;
+    justify-content: space-around;
+    height: 360px;
+}
+
+.formulario__items {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.formulario__contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__contacto input {
+    margin: 10px 0px;
+}
+
+.nombre {
+    width: 560px;
+    height: 56px;
+}
+
+.mensaje {
+    width: 560px;
+    height: 82px;
+}
+
+.btn-enviar {
+    border: none;
+    background-color: var(--azul-destaque);
+    color: white;
+    padding: 16px;
+    width: 144px;
+    height: 51px;
+}

@@ -1,0 +1,90 @@
+:root{
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #ffff;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #eaf2fd;
+    font-family: "Releway", sans-serif;
+}
+
+.encabezado{
+    background-color: var(--bg-color);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.encabezado__logo{
+    align-items: center;
+    display: flex;
+    width: 600px;   
+}
+
+.encabezado__logo img{
+    margin: 5px;
+    height: 29.17px;
+    width: 40.02px;
+}
+
+.encabezado__logo input{
+    margin: 15px;
+    width: 393px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.btn-login{
+    background-color: var(--azul-destaque);
+    color: white;
+    width: 182px;
+    height: 51px;
+}
+
+.destaque{
+    background: url(./assets/banner-image.png) center/ cover no-repeat;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 352px;
+    width: 1240px;
+    padding: 32px;
+    gap: 16px;
+}
+
+.destaque__informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 1200px;
+    height: 352px;
+    padding: 10px;
+}
+ 
+.destaque h1{
+    font-weight: 700;
+    font-size: 52px;
+    font-family: 'Raleway';
+    font-style: normal;
+    line-height: 61px;
+    color: var(--texto-destaque);
+   
+}
+
+.destaque p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--texto-destaque);
+}
+
+.destaque button{
+    width: 129px;
+    height: 51px;
+    background-color: var(--azul-destaque);
+    color: white;
+    
+}
