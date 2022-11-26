@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./Css/populares.css">
     <link rel="stylesheet" href="./Css/contacto.css">
     <link rel="stylesheet" href="./Css/rodapie.css">
+    <link rel="stylesheet" href="./Css/validaiones.css">
     <title>Alura Geek</title>
 </head>
 
@@ -21,7 +22,7 @@
                 <p>Geek</p>
                 <input type="text" placeholder="Que deseas buscar?">
             </div>
-            <a href="http://127.0.0.1:5500/login.html"><button class="btn-login">Login</button></a>
+            <a href="http://127.0.0.1:5500/Challenge-E-commerce2/login.html"><button class="btn-login">Login</button></a>
 
         </section>
     </header>
@@ -223,9 +224,15 @@
         </ul>
         <form action="" class="formulario__contacto">
         <h3>Hable con nosotros</h3>
-        <input class="nombre" type="text" placeholder="Nombre">
-        <input class="mensaje" type="text" placeholder="Mensaje">
-        <button class="btn-enviar">Enviar mensaje</button>
+        <div>
+        <input class="nombre" type="text" placeholder="Nombre" data-tipo="nombre" pattern="[A-Z, a-z]{4,40}" required> 
+        <span class="mensaje_error"></span>
+    </div>
+    <div>
+        <input class="mensaje" type="text" placeholder="Mensaje" data-tipo="mensaje" pattern="[A-Z, a-z, 0-9, $]{4,120}" required>
+        <span class="mensaje_error"></span>
+    </div>
+        <button  class="btn-enviar" type="submit">Enviar mensaje</button>
     </form>
         </section>
 
@@ -235,7 +242,7 @@
         <p class="rodapie__texto">Desarrollado por Nancy Echeverria</p>
             <p>2022</p> 
     </footer>
-
+<script src="./validaciones/app.js" type="module"></script>
 </body>
 
 </html>

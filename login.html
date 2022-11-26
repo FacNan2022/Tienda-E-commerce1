@@ -2,6 +2,7 @@
 <title>Login</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" href="./Css/login.css">
+<link rel="stylesheet" href="./Css/validaiones.css">
 
 <!------ Include the above in your HEAD tag ---------->
 
@@ -13,9 +14,15 @@
 
     <!-- Login Form -->
     <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+      <div>
+      <input type="email" id="login" class="fadeIn second" name="login" placeholder="login" required  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" data-tipo="email">
+      <span class="mensaje_error"></span>
+    </div>
+    <div>
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" data-tipo="password">
+      <span class="mensaje_error"></span>
+    </div>
+    <input type="submit" class="fadeIn fourth" value="Log In">
     </form>
 
     <!-- Remind Passowrd -->
@@ -25,3 +32,5 @@
 
   </div>
 </div>
+
+<script src="./validaciones/validaciones-login/app-login.js" type="module"></script>
