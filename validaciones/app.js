@@ -1,6 +1,6 @@
 import { valida } from "./validaciones.js";
 
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('.contacto');
 
 
 inputs.forEach((input) => {

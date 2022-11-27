@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./Css/contacto.css">
     <link rel="stylesheet" href="./Css/rodapie.css">
     <link rel="stylesheet" href="./Css/validaiones.css">
-    <title>Alura Geek</title>
-</head>
 
+    <title>Alura Geek</title>
+
+</head>
 <body>
     <header>
         <section class="encabezado">
@@ -20,7 +21,7 @@
                 <img src="./assets/logo.png" alt="">
                 <p>Alura</p>
                 <p>Geek</p>
-                <input type="text" placeholder="Que deseas buscar?">
+                <input type="search" name="buscador" class="buscar" id="buscador" placeholder="Que deseas buscar?" >
             </div>
             <a href="http://127.0.0.1:5500/Challenge-E-commerce2/login.html"><button class="btn-login">Login</button></a>
 
@@ -37,19 +38,22 @@
         </section>
 
         <section class="populares">
-
+            <h1>StarWars</h1>
             <div class="juegos" data-juegos>
+                
              
 
           
             </div>
-
+            <h1>Consolas</h1>
             <div class="consolas" id="consolas" data-consolas>
+                
 
             
             </div>
-
+            <h1>diversos</h1>
             <div class="diversos" data-diversos>
+               
              
             </div>
         </section>
@@ -69,11 +73,11 @@
         <form action="" class="formulario__contacto">
         <h3>Hable con nosotros</h3>
         <div>
-        <input class="nombre" type="text" placeholder="Nombre" data-tipo="nombre" pattern="[A-Z, a-z]{4,40}" required> 
+        <input class="nombre contacto" type="text" placeholder="Nombre" data-tipo="nombre" pattern="[A-Z, a-z]{4,40}" required> 
         <span class="mensaje_error"></span>
     </div>
     <div>
-        <input class="mensaje" type="text" placeholder="Mensaje" data-tipo="mensaje" pattern="[A-Z, a-z, 0-9, $]{4,120}" required>
+        <input class="mensaje contacto" type="text" placeholder="Mensaje" data-tipo="mensaje" pattern="[A-Z, a-z, 0-9, $]{4,120}" required>
         <span class="mensaje_error"></span>
     </div>
         <button  class="btn-enviar" type="submit">Enviar mensaje</button>

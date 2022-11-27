@@ -13,16 +13,27 @@ body {
     justify-content: center;
 }
 
-.starwars {
+.articulos {
     display: flex;
     flex-direction: column;
     justify-content: end;
     margin: 5px;
+    transition: all 500ms ease-out;
+    
 }
+
+
 
 .populares__img {
     width: 176px;
     height: 174px;
+  
+}
+
+.articulos:hover img {
+    width: 200px;
+    height: 200px;
+   
 }
 
 .starwars-producto {
@@ -55,7 +66,7 @@ strong {
     justify-content: center;
 }
 
-.consolas-producto {
+.articulos {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -71,7 +82,7 @@ strong {
     justify-content: center;
 }
 
-.diversos-productos {
+.articulos {
     display: flex;
     flex-direction: column;
     justify-content: end;
