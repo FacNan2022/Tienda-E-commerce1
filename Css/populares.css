@@ -13,6 +13,13 @@ body {
     justify-content: center;
 }
 
+.btn-titulo{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .articulos {
     display: flex;
     flex-direction: column;

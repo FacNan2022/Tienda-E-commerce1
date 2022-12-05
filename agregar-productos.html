@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./Css/rodapie.css">
     <link rel="stylesheet" href="./Css/validaiones.css">
     <link rel="stylesheet" href="./Css/modal.css">
+    <link rel="stylesheet" href="./Css/modal-agregar.css">
     
 
     <title>Alura Geek</title>
@@ -45,7 +46,7 @@
 
             <div class="btn-titulo">
             <h1>StarWars</h1>
-            <a href="http://127.0.0.1:5500/Challenge-E-commerce2/agregar-productos.html">Ver más</a>
+           <button data-agregar>Agregar producto</button>
             </div>
             <div class="juegos" data-juegos>
 
@@ -53,7 +54,7 @@
 
             <div class="btn-titulo">
             <h1>Consolas</h1>
-            <a href="http://127.0.0.1:5500/Challenge-E-commerce2/agregar-productos.html">Ver más</a>
+           
         </div>
 
             <div class="consolas" id="consolas" data-consolas>
@@ -62,7 +63,7 @@
 
         <div class="btn-titulo">
             <h1>diversos</h1>
-            <a href="http://127.0.0.1:5500/Challenge-E-commerce2/agregar-productos.html">Ver más</a>
+            
         </div>
 
             <div class="diversos" data-diversos>
@@ -102,9 +103,22 @@
         <section class="modal-container" data-modal>
         <div class="modal modal-close"></div>
         </section>
-
-       
-
+        
+        <section class="modal-agregar" data-form>
+            <div class="modal-productos modal-clos" data-modalA>
+            <form action="" class="formulario">
+                <p class="clos" data-cerrar>X</p>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text">
+                <label for="imagen">Imagen</label>
+                <input id="imagen" type="text">
+                <label for="precio">Precio</label>
+                <input id="precio" type="text">
+                <label for="descripcion">Descripcion</label>
+                <input id="descripcion" type="text">
+            </div>
+            </form>
+        </section>
     </main>
 
     <footer class="rodapie">
@@ -119,3 +133,4 @@
 <script src="./controller/juegos-controller.js" type="module"></script>
 <script src="./controller/consolas-controller/consola-controller.js" type="module"></script>
 <script src="./controller/diversos-controller/diversos-controller.js" type="module"></script>
+<script src="./controller/modal.js" type="module"></script>
