@@ -10,6 +10,7 @@ body {
 
 .juegos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -70,6 +71,7 @@ strong {
 
 .consolas {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -86,6 +88,7 @@ strong {
 
 .diversos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 

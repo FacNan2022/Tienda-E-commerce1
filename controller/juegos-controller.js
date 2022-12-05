@@ -42,8 +42,7 @@ export const obtenerJuegos = (id, img, nombre, precio, descripcion) =>{
     const articulo = document.createElement('article')
     articulo.classList.add('articulos')
 
-    const contenido = `   
-   
+    const contenido = `
         <img class="populares__img" src="${img}" alt="">
         <p class="productos">${nombre}</p>
         <p><strong>${precio}</strong></p>

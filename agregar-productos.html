@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./Css/validaiones.css">
     <link rel="stylesheet" href="./Css/modal.css">
     <link rel="stylesheet" href="./Css/modal-agregar.css">
-    
+
 
     <title>Alura Geek</title>
 
@@ -45,26 +45,26 @@
         <section class="populares">
 
             <div class="btn-titulo">
-            <h1>StarWars</h1>
-           <button data-agregar>Agregar producto</button>
+                <h1>StarWars</h1>
+                <button data-agregar>Agregar producto</button>
             </div>
             <div class="juegos" data-juegos>
 
             </div>
 
             <div class="btn-titulo">
-            <h1>Consolas</h1>
-           
-        </div>
+                <h1>Consolas</h1>
+
+            </div>
 
             <div class="consolas" id="consolas" data-consolas>
 
             </div>
 
-        <div class="btn-titulo">
-            <h1>diversos</h1>
-            
-        </div>
+            <div class="btn-titulo">
+                <h1>diversos</h1>
+
+            </div>
 
             <div class="diversos" data-diversos>
 
@@ -101,22 +101,37 @@
         </section>
 
         <section class="modal-container" data-modal>
-        <div class="modal modal-close"></div>
+            <div class="modal modal-close"></div>
         </section>
-        
+
         <section class="modal-agregar" data-form>
+
             <div class="modal-productos modal-clos" data-modalA>
-            <form action="" class="formulario">
-                <p class="clos" data-cerrar>X</p>
-                <label for="nombre">Nombre</label>
-                <input id="nombre" type="text">
-                <label for="imagen">Imagen</label>
-                <input id="imagen" type="text">
-                <label for="precio">Precio</label>
-                <input id="precio" type="text">
-                <label for="descripcion">Descripcion</label>
-                <input id="descripcion" type="text">
+
+                <form action="" class="form">
+                    <p class="clos" data-cerrar>X</p>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" data-nombre>
+                    <label for="imagen">Imagen</label>
+                    <input id="imagen" type="text" data-imagen>
+                    <label for="precio">Precio</label>
+                    <input id="precio" type="text" data-precio>
+                    <label for="descripcion">Descripcion</label>
+                    <input id="descripcion" type="text" data-descripcion>
+                    <div class="productos">
+                        <fieldset>
+                            <legend>¿Qué producto desea agregar?</legend>
+                            <label for="juegos">Juegos</label>
+                            <input id="juegos" type="radio" name="juegos" data-productos>
+                            <label for="consolas">Consolas</label>
+                            <input id="consola" type="radio" name="juegos" data-productos>
+                            <label for="diversos">Diversos</label>
+                            <input id="diversos" type="radio" name="juegos" data-productos>
+                        </fieldset>
+                    </div>
+                    <input type="button" value="Enviar formulario" class="enviar" data-enviar>
             </div>
+
             </form>
         </section>
     </main>
@@ -134,3 +149,4 @@
 <script src="./controller/consolas-controller/consola-controller.js" type="module"></script>
 <script src="./controller/diversos-controller/diversos-controller.js" type="module"></script>
 <script src="./controller/modal.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
